@@ -1,0 +1,448 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+body{
+    height: 400vh;
+    background-color: #000F17;
+    transition: 0.5s;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+
+/* ---------------------------Suivre-souris--------------------------- */
+
+.suivre-souris {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: rgba(13, 57, 122, 0.41);
+    filter: blur(50px);
+    z-index: -99;
+  } 
+
+  
+  
+
+/* ---------------------------Navigation--------------------------- */
+
+.accueil {
+    height: 100vh;
+}
+
+.en-tete{
+    display: flex;
+}
+
+header{
+    height: 8vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titre{
+    margin-left: 2vw;
+    transform: translatex(-250px);
+    animation: apparitionnav 0.5s 1.2s  ease-out forwards;
+}
+
+.titre p {
+    font-weight: 800;
+    font-size: 23px;
+    color: #DDEAEF;
+}
+
+.titre .clignoter {
+    animation: clignoter 1s infinite;
+}
+
+.nav nav{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    transform: translateY(-60px);
+    animation: apparitionnav 0.3s 1s  ease-out forwards;
+    justify-content: space-around;
+}
+
+.nav nav a{
+    font-weight: 400;
+    font-size: 20px;
+    color: #DDEAEF;
+    transition: 0.3s;
+}
+
+.nav nav a:hover{
+    color: #0A5EE0;
+    transition: 0.3s;
+}
+
+
+
+
+/* ---------------------------Les icons--------------------------- */
+
+.iconfix{
+    height: 8vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+}
+.lesicons{
+    display: flex;
+    position: fixed;
+    transform: translateY(-60px);
+    animation: apparitionnav 0.3s 1s  ease-out forwards;
+}
+
+.icon-mode{
+    height: 40px;
+    width: 40px;
+    background-image: url(/Css/Accueil/images/Mode-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.icon-accueil{
+    height: 40px;
+    width: 40px;
+    background-image: url(/Css/Accueil/images/Home-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.icon-mode:hover{
+    background-image: url(/Css/Accueil/images/Mode-dark-hover.svg);
+    transition: 0.3s;
+}
+
+.icon-accueil:hover{
+    background-image: url(/Css/Accueil/images/Home-dark-hover.svg);
+    transition: 0.3s;
+}
+
+/* ---------------------------Corp--------------------------- */
+
+.corp .texte p{
+    font-weight: 800;
+    font-size: 46px;
+    color: #DDEAEF;
+    z-index: 99;
+    text-align: center;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+
+.corp .texte p span{
+    color: #0A5EE0;
+}
+
+ .corp {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: apparitiontit 0.5s 0s  ease-out forwards;
+  }
+
+
+  .corp a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    background-color: #0A5EE0;
+    color: #FFFFFF;
+    outline: solid 4px #0A5EE0;
+    transition: 0.3s;
+  }
+
+  .corp a:hover{
+    background-color: transparent;
+    outline: solid 4px white;
+    color: #FFFFFF;
+    transition: 0.3s;
+  }
+  
+  .bulle-bas-droite {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 100%;
+    background: rgba(10, 94, 224, 0.41);
+    position: absolute; 
+    filter: blur(115px);
+    right: 0vw;
+    z-index: -1;
+    top: 50vh;
+  }
+
+  .bulle-gauche{
+    height: 700px;
+    width: 700px;
+    border-radius: 100%;
+    background: rgba(13, 57, 122, 0.41);
+    position: absolute; 
+    bottom: 0;
+    right: 85vw;
+    filter: blur(115px);
+    z-index: -1;
+  }
+
+
+
+
+
+
+
+/* ---------------------------KeyFrames--------------------------- */
+
+@keyframes clignoter {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes apparitionnav {
+
+
+    100%{
+        opacity: 100%;
+        transform: none;
+    }
+
+
+}
+
+
+@keyframes apparitiontit {
+
+    0%{
+        scale: 0;
+    }
+
+    100%{
+        opacity: 100%;
+        transform: none;
+        scale: 1;
+    }
+
+}
+
+
+  /* Styles pour les écrans de moins de 600 pixels de large */
+@media screen and (max-width: 1540px) {
+
+
+    .nav nav{
+        margin-right: 2vw;
+    }
+    
+    .iconfix{
+        margin-right: 4vw;
+    }
+    
+    
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .corp a{
+  
+        font-size: 20px;
+      }
+    
+      .corp .texte p{
+        font-size: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+
+    .nav nav{
+        width: 50vw;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+    .corp a{
+        width: 15vw;
+        height: 5vw;
+        font-size: 20px;
+      }
+    
+      .corp .texte p{
+        font-size: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+
+    .nav nav{
+        display: none;
+    }
+
+    .iconfix{
+        margin-right: 8vw;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .corp a{
+        width: 20vw;
+        height: 7vw;
+        font-size: 15px;
+      }
+
+      .iconfix{
+        margin-right: 9vw;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .iconfix{
+        margin-right: 13vw;
+    }
+
+    .corp .texte p{
+        font-size: 25px;
+    }
+
+    .iconfix{
+        margin-right: 2vw;
+        width: 30vw;
+        justify-content: flex-end;
+    }
+
+    .icon-mode{
+        height: 36px;
+        width: 36px;
+  
+    }
+    
+    .icon-accueil{
+        height: 36px;
+        width: 36px;
+  
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    .iconfix{
+        margin-right: 15vw;
+    }
+
+    .corp .texte p{
+        font-size: 27px;
+    }
+    
+    .corp {
+        height: 40vh;
+    }
+
+    .corp a {
+      display: none;
+    }
+
+    .accueil{
+        height: 50vh;
+    }
+
+    .iconfix{
+        margin-right: 2vw;
+        width: 30vw;
+        justify-content: flex-end;
+    }
+
+    .icon-mode{
+        height: 36px;
+        width: 36px;
+  
+    }
+    
+    .icon-accueil{
+        height: 36px;
+        width: 36px;
+  
+    }
+
+    .titre p {
+
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .corp .texte p{
+        font-size: 23px;
+    }
+
+    .titre p {
+        margin-left: 2vw;
+        font-size: 15px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 370px) {
+
+    .corp .texte p{
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 330px) {
+
+    .corp .texte p{
+        font-size: 15px;
+    }
+
+}
+

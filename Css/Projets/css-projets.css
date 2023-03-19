@@ -1,0 +1,489 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+.Projets{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+ 
+
+/* -----------------Intitulé------------------- */
+
+.intitule-projet{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intitule-projet p{  
+    font-weight: 800;
+    font-size: 46px;
+    color: #DDEAEF;
+} 
+
+/* -----------------Corp------------------- */
+
+.couverture-projet{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesprojets{
+    height: 70vh;
+}
+
+div.jardinzen p, div.airpods p, div.huddle p, div.connexion p, div.parfum p, div.card p{
+    font-weight: 700;
+    font-size: 49px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.lesprojets .haut {
+    padding: 1% 5% 0% 5%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    overflow-y: hidden;
+}
+
+.lesprojets .haut div.jardinzen, div.airpods, div.huddle{
+    height: 204px;
+    width: 415px;
+    border-radius: 17px;
+    background-color: #DDEAEF;
+}
+
+.jardinzen{
+    background-image: url(/Css/Projets/Images/jardinzen.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.jardinzen:hover {
+    background-image: url(/Css/Projets/Images/Blur/ja-modified.png);
+    transition: 0.5s;
+}
+
+.jardinzen:hover p{
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+
+.airpods{
+    background-image: url(/Css/Projets/Images/Airpods.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.airpods:hover {
+    background-image: url(/Css/Projets/Images/Blur/a-modified.png);
+    transition: 0.5s;
+}
+
+.airpods:hover p{
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+
+
+
+.huddle{
+    background-image: url(/Css/Projets/Images/huddle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.huddle:hover {
+    background-image: url(/Css/Projets/Images/Blur/h-modified.png);
+    transition: 0.5s;
+}
+
+.huddle:hover p{
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+
+.lesprojets .bas{
+    padding: 1% 5% 0% 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.lesprojets .bas div.connexion, div.parfum, div.card{
+    height: 204px;
+    width: 415px;
+    border-radius: 17px;
+    background-color: #DDEAEF;
+}
+
+
+.connexion{
+    background-image: url(/Css/Projets/Images/connexion.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.connexion:hover {
+    background-image: url(/Css/Projets/Images/Blur/co-modified.png);
+    transition: 0.5s;
+}
+
+.connexion:hover p{
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+
+
+.parfum{
+    background-image: url(/Css/Projets/Images/Parfum.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.parfum:hover {
+    background-image: url(/Css/Projets/Images/Blur/p-modified.png);
+    transition: 0.5s;
+}
+
+.parfum:hover p{
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+
+
+.card{
+    background-image: url(/Css/Projets/Images/card.svg);
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+.card:hover {
+    background-image: url(/Css/Projets/Images/Blur/c-modified.png);
+    transition: 0.5s;
+}
+
+.card:hover p{
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+
+
+/* -----------------Boutton-contact------------------- */
+.couverture-boutton-contact{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    
+}
+.couverture-boutton-contact a{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #0A5EE0;
+    color: #FFFFFF;
+    outline: solid 4px #0A5EE0;
+    transition: 0.3s;
+  }
+
+  .couverture-boutton-contact a:hover{
+    background-color: transparent;
+    outline: solid 4px white;
+    color: #FFFFFF;
+    transition: 0.3s;
+  }
+
+.bulle-bas-droite-contacter {
+    height: 25vw;
+    width: 25vw;
+    border-radius: 100%;
+    background: rgba(10, 94, 224, 0.41);
+    filter: blur(115px);
+    position: absolute;
+    right: 0vw;
+    top: 250vh;
+    z-index: -1;
+  }
+
+
+
+  
+  @media screen and (max-width: 1520px) {
+   
+    .couverture-boutton-contact a{
+        font-size: 20px;
+      
+      }
+    
+  }
+
+  @media screen and (max-width: 1450px) {
+
+
+.lesprojets .haut{
+    flex-direction: column;
+    height: 80vh;
+}
+
+.lesprojets .bas{
+    flex-direction: column;
+    height: 80vh;
+}
+
+.couverture-boutton-contact{
+    margin-top: 5vh;
+}
+
+  }
+
+
+  @media screen and (max-width: 1460px) {
+
+
+  .couverture-boutton-contact a{
+    font-size: 20px;
+  }
+    
+      }
+@media screen and (max-width: 1280px) {
+        
+ .intitule-projet p{  
+      font-size: 40px;
+ } 
+.couverture-boutton-contact a{
+  font-size: 18px;
+ }
+          
+}
+
+
+@media screen and (max-width: 1206px) {
+        
+    .intitule-projet p{  
+         font-size: 40px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 18px;
+     width: 14vw;
+    height: 4vw;
+    }
+             
+   }
+
+   
+@media screen and (max-width: 1006px) {
+        
+    .intitule-projet p{  
+         font-size: 40px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 18px;
+     width: 17vw;
+    height: 4vw;
+    }
+             
+   }
+
+   @media screen and (max-width: 822px) {
+        
+    .intitule-projet p{  
+         font-size: 40px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 18px;
+     width: 20vw;
+    height: 4vw;
+    }
+             
+   }
+
+   @media screen and (max-width: 690px) {
+        
+    .intitule-projet p{  
+         font-size: 40px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 18px;
+     width: 23vw;
+    height: 5vw;
+    }
+             
+   }
+
+   
+   @media screen and (max-width: 570px) {
+        
+    .intitule-projet p{  
+         font-size: 40px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 18px;
+     width: 26vw;
+    height: 5vw;
+    }
+             
+   }
+
+
+   @media screen and (max-width: 510px) {
+        
+    .intitule-projet p{  
+         font-size: 40px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 18px;
+     width: 29vw;
+    height: 7vw;
+    }
+             
+   }
+
+   @media screen and (max-width: 454px) {
+        
+    .intitule-projet p{  
+         font-size: 40px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 15px;
+     width: 29vw;
+    height: 7vw;
+    }
+
+    .lesprojets .haut div.jardinzen, div.airpods, div.huddle{
+        height: 200px;
+        width: 300px;
+        border-radius: 17px;
+        background-color: #DDEAEF;
+    }
+
+    .lesprojets .bas div.connexion, div.parfum, div.card{
+        height: 200px;
+        width: 300px;
+        border-radius: 17px;
+        background-color: #DDEAEF;
+    }
+
+    .lesprojets .bas .card{
+        background-size: 150%;
+     }
+  
+    
+             
+   }
+
+   @media screen and (max-width: 402px) {
+        
+   .Projets{
+    margin-top: -30vh;
+   }
+  
+    
+             
+   }
+
+
+   
+   @media screen and (max-width: 383px) {
+        
+    .intitule-projet p{  
+         font-size: 30px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 15px;
+     width: 35vw;
+    height: 7vw;
+    }
+    
+             
+   }
+
+
+   @media screen and (max-width: 322px) {
+        
+    .intitule-projet p{  
+         font-size: 30px;
+    } 
+   .couverture-boutton-contact a{
+     font-size: 14px;
+     width: 33vw;
+    height: 7vw;
+    }
+
+    .lesprojets .haut div.jardinzen, div.airpods, div.huddle{
+        height: 150px;
+        width: 250px;
+        border-radius: 17px;
+        background-color: #DDEAEF;
+    }
+
+    .lesprojets .bas div.connexion, div.parfum, div.card{
+        height: 150px;
+        width: 250px;
+        border-radius: 17px;
+        background-color: #DDEAEF;
+    }
+
+    .lesprojets .bas .card{
+        background-size: 150%;
+     }
+  
+    
+             
+   }
+
+

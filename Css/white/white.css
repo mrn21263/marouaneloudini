@@ -1,0 +1,110 @@
+body.theme-blanc{
+    height: 400vh;
+    background-color: white;
+    transition: 0.5s;
+}
+
+body.theme-blanc .titre p{
+    color: black;
+  }
+
+
+
+  body.theme-blanc nav a {
+    color: black;
+  }
+
+  body.theme-blanc nav a:hover {
+    color: #0A5EE0;
+  }
+
+  body.theme-blanc .corp .texte p {
+    color: black;
+  }
+
+  body.theme-blanc  .boutton-propos a {
+    
+  }
+
+  body.theme-blanc .icon-mode{
+    background-image: url(/Css/Accueil/images/Mode-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+body.theme-blanc .icon-mode:hover{
+  background: url(/Css/Accueil/images/Mode-white-hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  body.theme-blanc .icon-accueil{
+    background-image: url(/Css/Accueil/images/Home-white.svg);   
+}
+
+body.theme-blanc .icon-accueil:hover{
+  background-image: url(/Css/Accueil/images/Home-white-hover.svg);
+}
+
+  body.theme-blanc .intitule p {
+    color: black;
+    }
+
+  body.theme-blanc .partie-gauche-propos p {
+    color: black;
+  } 
+
+  body.theme-blanc .intitule-projet p {
+    color: black;
+  }
+
+  body.theme-blanc .intitule-contact p {
+    color: black;
+  }
+  
+
+  body.theme-blanc .email input {
+    border: solid black 5px;
+    color: black;
+  }
+
+
+  body.theme-blanc .message textarea {
+    border: solid black 5px;
+    color: black;
+  }
+
+
+  body.theme-blanc .form-group input {
+    border: solid black 5px;
+    color: black;
+  }
+
+  body.theme-blanc form p {
+    color: black;
+  }
+
+  body.theme-blanc form textarea {
+    color: black;
+  }
+ 
+
+
+  body.theme-blanc .formulaire input:focus {
+    outline: none;
+    border: solid #0A5EE0 5px;
+    transition: 0.5s;
+  }
+
+  body.theme-blanc .formulaire textarea:focus {
+    outline: none;
+    border: solid #0A5EE0 5px;
+    transition: 0.5s;
+  }
+
+  body.theme-blanc.envoyer input:focus {
+    outline: none;
+  }
+
+

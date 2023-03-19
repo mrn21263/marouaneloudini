@@ -1,0 +1,296 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    height: 100vh;
+    background-color: #000F17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+------------------Intitulé---------------------- */
+
+
+.txt{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.txt p{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: px;
+    color: #DDEAEF;
+    text-align: center;
+    opacity: 0;
+    animation: apparitiontit 1.5s 1.5s  ease-out forwards;
+}
+
+.image{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    margin-bottom: 2vh;
+    opacity: 0;
+    animation: apparitiontit 1.5s 1s  ease-out forwards;
+
+}
+
+.txt span{
+    color: #0A5EE0;
+}
+
+
+.txt2 p{
+    font-weight: 800;
+    font-size: 25px;
+    color: #DDEAEF;
+}
+
+
+
+  .txt a{
+    margin-top: 2vh;
+    height: 6vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: #0A5EE0;
+    color: #FFFFFF;
+    outline: solid 4px #0A5EE0;
+    transition: 0.3s;
+    opacity: 0;
+    animation: apparitiontit 1s 2s  ease-out forwards;
+  }
+
+  .txt a:hover{
+    background-color: transparent;
+    outline: solid 4px white;
+    color: #FFFFFF;
+    transition: 0.3s;
+  }
+
+  .bulle-bas-droite {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 100%;
+    background: rgba(10, 94, 224, 0.41);
+    position: absolute; 
+    filter: blur(115px);
+    right: 0vw;
+    z-index: -1;
+    top: 50vh;
+  }
+
+  .bulle-gauche{
+    height: 700px;
+    width: 700px;
+    border-radius: 100%;
+    background: rgba(13, 57, 122, 0.41);
+    position: absolute; 
+    bottom: 0;
+    right: 85vw;
+    filter: blur(115px);
+    z-index: -1;
+  }
+
+
+@keyframes apparitiontit {
+
+    0%{
+        opacity: 0%;
+    }
+
+
+    100%{
+        opacity: 100%;
+        transform: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1354px) {
+
+    
+  .txt a{
+    width: 25vw;
+  }
+   
+
+}
+
+@media screen and (max-width: 1070px) {
+
+    
+    .txt a{
+      width: 30vw;
+    }
+
+
+    .txt2 p{
+        font-size: 20px;
+
+    }
+     
+  
+  }
+
+  @media screen and (max-width: 830px) {
+
+    
+    .txt a{
+      width: 30vw;
+      font-size: 20px;
+    }
+
+
+    .txt2 p{
+        font-size: 18px;
+
+    }
+     
+  
+  }
+
+  @media screen and (max-width: 830px) {
+
+    
+    .txt a{
+      width: 35vw;
+      font-size: 20px;
+    }
+
+
+    .txt2 p{
+        font-size: 15px;
+
+    }
+     
+  
+  }
+  
+  @media screen and (max-width: 700px) {
+
+    
+    .txt a{
+        height: 5vh;
+      width: 35vw;
+      font-size: 18px;
+    }
+
+
+    .txt1 p{
+        font-size: 25px;
+    }
+
+    .txt2 p{
+        font-size: 15px;
+
+    }
+     
+  
+  }
+
+  @media screen and (max-width: 530px) {
+
+    
+    .txt a{
+      height: 5vh;
+      width: 45vw;
+      font-size: 18px;
+    }
+
+
+    .txt1 p{
+        font-size: 25px;
+    }
+
+    .txt2 p{
+        font-size: 15px;
+
+    }
+     
+  
+  }
+
+  @media screen and (max-width: 426px) {
+
+    
+    .txt a{
+      height: 5vh;
+      width: 55vw;
+      font-size: 18px;
+    }
+
+
+    .txt1 p{
+        font-size: 20px;
+    }
+
+    .txt2 p{
+        font-size: 15px;
+
+    }
+     
+  
+  }
+
+  
+  @media screen and (max-width: 426px) {
+
+    
+    .txt a{
+      height: 5vh;
+      width: 55vw;
+      font-size: 15px;
+    }
+
+  
+  }
+
+  @media screen and (max-width: 306px) {
+
+    .txt1 p{
+        font-size: 17px;
+    }
+
+    .txt2 p{
+        font-size: 14px;
+
+    }
+
+    .txt a{
+        height: 5vh;
+        width: 65vw;
+        font-size: 14px;
+      }
+
+  
+  }
